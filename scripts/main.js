@@ -1,3 +1,3 @@
 'use strict';
 
-Parse.initialize('qy4WDiTUAsyns9L817gjZdVf1aEQTetovh1yNDTk', 'xrkwhyHvS5Y9od0EWmN9hd0ssv28caF4YATtQaPJ');
+Parse.initialize('L5JHgLYWrhYIjqJiB0OL00VdNPXm4Ms6RGRsWY4O', 'cU7vV8M5uTieSclWI05A98Irn2GSpqPeWNqDMIjh');

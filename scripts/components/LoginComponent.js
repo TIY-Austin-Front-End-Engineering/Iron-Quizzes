@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
- 
+
 module.exports = react.createClass({
 	getInitialState: function() {
 		return(
@@ -47,7 +47,7 @@ module.exports = react.createClass({
 						error: error.message
 					})
 				}
-			}	
+			}
 		)
 	}
 })
