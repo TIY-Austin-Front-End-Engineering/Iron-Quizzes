@@ -4,18 +4,13 @@ var ReactDOM = require('react-dom');
 var Backbone = require('backbone');
 window.$ = require('jquery');
 window.jQuery = $;
-
-
 Parse.initialize('qy4WDiTUAsyns9L817gjZdVf1aEQTetovh1yNDTk', 'xrkwhyHvS5Y9od0EWmN9hd0ssv28caF4YATtQaPJ');
-
 var RegisterComponent = require('./components/RegisterComponent');
 var NavigationComponent = require('./components/NavigationComponent');
 var LoginComponent = require('./components/LoginComponent');
 var QuizListComponent = require('./components/QuizListComponent');
 var PostQuestionComponent = require('./components/PostQuestionComponent');
-
 var app = document.getElementById('app');
-
 var Router = Backbone.Router.extend({
 	routes: {
 		'': 'home',
@@ -25,7 +20,6 @@ var Router = Backbone.Router.extend({
 		'postQuestion': 'postQuestion',
 		'quizResults/:id': 'quizResults',
 		'logout': 'logout'
-
 	},
 	home: function() {
 		//ReactDOM.render(<HomeComponent />, app);
@@ -50,10 +44,8 @@ var Router = Backbone.Router.extend({
 		this.navigate('home', {trigger: true} );
 	}
 });
-
 var r = new Router();
 Backbone.history.start();
-
 ReactDOM.render(
 	<NavigationComponent router={r} />,
 	document.getElementById('nav')
