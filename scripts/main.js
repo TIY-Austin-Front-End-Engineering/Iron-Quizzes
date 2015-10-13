@@ -5,8 +5,9 @@ var Backbone = require('backbone');
 window.$ = require('jquery');
 window.jQuery = $;
 
+Parse.initialize('CKo05MhMwPBIhtDVEPXIkPSdbEgeP66R6nm2HUjm', 'DTN20m4e87Tffl5XmCXAjRMphFlikfqNhmTyU3Bq');
 
-Parse.initialize('qy4WDiTUAsyns9L817gjZdVf1aEQTetovh1yNDTk', 'xrkwhyHvS5Y9od0EWmN9hd0ssv28caF4YATtQaPJ');
+
 
 var RegisterComponent = require('./components/RegisterComponent');
 var NavigationComponent = require('./components/NavigationComponent');
@@ -58,3 +59,4 @@ ReactDOM.render(
 	<NavigationComponent router={r} />,
 	document.getElementById('nav')
 );
+
