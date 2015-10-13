@@ -1,3 +1,56 @@
 'use strict';
+var React = require('react');
+var ReactDOM = require('react-dom');
+var Backbone = require('backbone');
+window.$ = require('jquery');
+window.jQuery = $;
 
-Parse.initialize('L5JHgLYWrhYIjqJiB0OL00VdNPXm4Ms6RGRsWY4O', 'cU7vV8M5uTieSclWI05A98Irn2GSpqPeWNqDMIjh');
+Parse.initialize('CKo05MhMwPBIhtDVEPXIkPSdbEgeP66R6nm2HUjm', 'DTN20m4e87Tffl5XmCXAjRMphFlikfqNhmTyU3Bq');
+
+var RegisterComponent = require('./components/RegisterComponent');
+var NavigationComponent = require('./components/NavigationComponent');
+var LoginComponent = require('./components/LoginComponent');
+var QuizListComponent = require('./components/QuizListComponent');
+var PostQuestionComponent = require('./components/PostQuestionComponent');
+
+var app = document.getElementById('app');
+
+var Router = Backbone.Router.extend({
+	routes: {
+		'': 'home',
+		'dashboard': 'dashboard',
+		'login': 'login',
+		'register': 'register',
+		'postQuestionComponent': 'postQuestionComponent',
+		'logout': 'logout'
+
+	},
+	home: function() {
+		//ReactDOM.render(<HomeComponent />, app);
+	},
+	dashboard: function() {
+		ReactDOM.render(<DashboardComponent router={r} />, app);
+	},
+	login: function() {
+		ReactDOM.render(<LoginComponent router={r} />, app);
+	},
+	register: function() {
+		ReactDOM.render(<RegisterComponent router={r} />, app);
+	},
+	createQuestion: function() {
+		ReactDOM.render(<PostQuestionComponent/>, app);
+	},
+	logOut: function() {
+		Parse.User.logOut();
+		this.navigate('home', {trigger: true} );
+	}
+});
+
+var r = new Router();
+Backbone.history.start();
+
+ReactDOM.render(
+	<NavigationComponent router={r} />,
+	document.getElementById('nav')
+);
+
