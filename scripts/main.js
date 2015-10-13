@@ -7,6 +7,8 @@ window.jQuery = $;
 
 Parse.initialize('CKo05MhMwPBIhtDVEPXIkPSdbEgeP66R6nm2HUjm', 'DTN20m4e87Tffl5XmCXAjRMphFlikfqNhmTyU3Bq');
 
+
+
 var RegisterComponent = require('./components/RegisterComponent');
 var NavigationComponent = require('./components/NavigationComponent');
 var LoginComponent = require('./components/LoginComponent');
