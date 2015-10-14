@@ -40,14 +40,14 @@ var Router = Backbone.Router.extend({
 	home: function() {
 		ReactDOM.render(<HomeComponent />, app);
 	},
-	dashboard: function() {
-		// if(currentUser && currentUser.get('teacher') === true) {
-		// 	ReactDOM.render(<DashboardComponent router={r} />, app);
-		// }
-		// else {
-		// 	this.navigate('', {trigger: true});
-		// }
-	},
+	// dashboard: function() {
+	// 	// if(currentUser && currentUser.get('teacher') === true) {
+	// 	// 	ReactDOM.render(<DashboardComponent router={r} />, app);
+	// 	// }
+	// 	// else {
+	// 	// 	this.navigate('', {trigger: true});
+	// 	// }
+	// },
 	login: function() {
 		ReactDOM.render(<LoginComponent router={r} />, app);
 	},
