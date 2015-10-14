@@ -29,11 +29,9 @@ var Router = Backbone.Router.extend({
 		'register': 'register',
 		'quizList': 'quizList',
 		'postQuestion': 'postQuestion',
-		'quizResults/:id': 'quizResults',
 		'logout': 'logout',
 		'classAnalytics': 'classAnalytics',
 		'quizResults/:userId/:quizId': 'quizResults',
-		'logout': 'logout'
 		'quizDetails/:id':'quizDetailsPage'
 	},
 	quizDetailsPage: function(id){
@@ -42,14 +40,14 @@ var Router = Backbone.Router.extend({
 	home: function() {
 		ReactDOM.render(<HomeComponent />, app);
 	},
-	dashboard: function() {
-		// if(currentUser && currentUser.get('teacher') === true) {
-		// 	ReactDOM.render(<DashboardComponent router={r} />, app);
-		// }
-		// else {
-		// 	this.navigate('', {trigger: true});
-		// }
-	},
+	// dashboard: function() {
+	// 	// if(currentUser && currentUser.get('teacher') === true) {
+	// 	// 	ReactDOM.render(<DashboardComponent router={r} />, app);
+	// 	// }
+	// 	// else {
+	// 	// 	this.navigate('', {trigger: true});
+	// 	// }
+	// },
 	login: function() {
 		ReactDOM.render(<LoginComponent router={r} />, app);
 	},
