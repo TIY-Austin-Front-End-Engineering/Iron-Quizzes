@@ -17,16 +17,17 @@ module.exports = React.createClass({
 		}
 		return(
 		//Log In form starts here with username and password required
-		<div className = "loginFormContainer">
+		<div className = "login-form-container">
 			<form className="login-form" onSubmit={this.onLogin}>
-				<h1 className="login-heading">Login</h1>
+				<h1 className="login-heading"><strong>Login</strong></h1>
+				<hr />
 				{errorElement}
 				<label htmlFor="userName" >User Name</label>
-				<input className="u-full-width" ref="userName" type="text" 	placeholder="username" id="userName" />
+				<input className="login-user-input" ref="userName" type="text" 	placeholder="username" id="userName" />
 				<label htmlFor="password" >Password</label>
-				<input className="u-full-width" ref="password" type="password" placeholder ="password" id="password" />
+				<input className="login-pass-input" ref="password" type="password" placeholder ="password" id="password" />
 				<br/><br/>
-				<button ref="button" className="button-primary" disabled={false}>Log In</button>
+				<button ref="button" className="log-button-primary" disabled={false}>Log In</button>
 			</form>
 		</div>
 		);
