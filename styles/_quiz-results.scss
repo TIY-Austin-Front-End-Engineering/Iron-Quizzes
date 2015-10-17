@@ -9,10 +9,14 @@
 	}
 
 	.title {
+<<<<<<< HEAD
 		color:#FF434A;
 		font-weight: bold 20em;
 		display:inline-block;
 		margin-right:20%;
+=======
+		font-family: $fontText;
+>>>>>>> 458fc36b4e5e283917c68abe98f431b4cc5b3578
 	}
 	hr{
 	margin: 0;
@@ -40,17 +44,26 @@
 
 	.container {
 		margin: 2em;
+<<<<<<< HEAD
 		
+=======
+		font-family: $fontText;
+>>>>>>> 458fc36b4e5e283917c68abe98f431b4cc5b3578
 	}
 
 
 	.question-container {
 		margin: 2em;
+<<<<<<< HEAD
 		color:#42094A;
+=======
+		font-family: $fontText;
+>>>>>>> 458fc36b4e5e283917c68abe98f431b4cc5b3578
 	}
 		
 	.percentage {
 		margin: 2em;
+<<<<<<< HEAD
 		font-size:2em;
 		color:#FF434A;
 		
@@ -59,17 +72,28 @@
 		font-size:1.5em;
 		color:#FFA54B;
 
+=======
+		font-family: $fontText;
+>>>>>>> 458fc36b4e5e283917c68abe98f431b4cc5b3578
 	}
 
 	.green {
 		color: green;
 		font-weight: bold;
+<<<<<<< HEAD
 		
+=======
+		font-family: $fontText;
+>>>>>>> 458fc36b4e5e283917c68abe98f431b4cc5b3578
 	}
 
 	.red {
 		color: red;
 		font-weight: bold;
+<<<<<<< HEAD
 		
+=======
+		font-family: $fontText;
+>>>>>>> 458fc36b4e5e283917c68abe98f431b4cc5b3578
 	}
 }
