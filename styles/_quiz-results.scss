@@ -3,13 +3,16 @@
 
 	.results-heading{
 		color:#FF434A;
-		font-weight: bold 20em;
+		font-weight: bold 15em;
+		display:inline-block;
 		
 	}
 
 	.title {
-		
-		color:#FFA54B;
+		color:#FF434A;
+		font-weight: bold 20em;
+		display:inline-block;
+		margin-right:20%;
 	}
 	hr{
 	margin: 0;
@@ -32,6 +35,7 @@
 
 	.question {
 		font-size: 2em;
+		color:#FFA54B;
 	}
 
 	.container {

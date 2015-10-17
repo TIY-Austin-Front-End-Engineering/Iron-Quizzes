@@ -93,7 +93,8 @@ module.exports = React.createClass({
 
 		var ListQuizName = this.state.quizName.map((name) => {
 			return (
-				<h5 className="title">Quiz Name: {name.get('quizTitle')}</h5>
+				<h3 className="title">Quiz Name: {name.get('quizTitle')}</h3>
+				
 			)
 		})
 		var ListQuestionDetails = this.state.questions.map((question) => {
@@ -110,9 +111,12 @@ module.exports = React.createClass({
 			return (
 				<div className="quiz-results-container">
 					<div className="container">
-						<h2 className="results-heading"><strong>Check Out Your Results!</strong></h2>
+					<span><h3 className="results-heading">You Just Finished</h3>{ListQuizName}
+					<h3 className="results-heading"><strong>Now Check Out Your Results!</strong></h3>
+					</span>
 						<hr />
-						{ListQuizName}
+						
+						
 					</div>
 					
 					<div>
