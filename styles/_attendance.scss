@@ -1,21 +1,26 @@
 .att-container {
 	margin: 0 5em;
 	.att-table {
-		background: #934C47;
-		color: #F9D824;
+		background: #F3EAE1;
+		color: #42094A;
+		font-family:Oswald, sans-serif;
 	}
 	th {
 		text-align: center;
 	}
 	.att-butt {
 		float: left;
-		background: #24677F;
-		color: #F9D824;
+		background-color:#90C5A9;
+		color:#42094A ;
+	}
+	.att-info{
+		color:#FFA54B;
 	}
 	#exampleRecipientInput {
 		float: left;
 		display: inline-block;
 		width: 40%;
+		color:#42094A;
 	}
 	option {
 		display: inline-block;
@@ -24,17 +29,23 @@
 		text-align: center;
 		font-size: 3em;
 		margin-top: .5em;
-		color: $hover;
-		background: $navbar;
+		background-color:#F3EAE1;
+		color: #FF434A;
+		font-family:Oswald, sans-serif;
 		padding: .4em 0;
+	}
+	hr{
+		margin: 0;
+		border-color: #FFA54B;
+		clear: both;
+		padding-bottom: 2em;
 	}
 	.att-info {
 		font-size: 2em;
 		margin-top: 2em;
 	}
 	td {
-		background: $innerContainer;
-		border: 2px solid $bodyBackground;
+		border: 2px solid #FFA54B;
 	}
 	td:first-child {
     	padding-left: 15px;
