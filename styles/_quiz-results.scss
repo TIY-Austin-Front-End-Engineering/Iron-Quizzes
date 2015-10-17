@@ -1,37 +1,71 @@
 .quiz-results-container {
+	font-family:Oswald, sans-serif;
 
-	.title {
-		font-family: $fontQuestrial;
+	.results-heading{
+		color:#FF434A;
+		font-weight: bold 20em;
+		
 	}
 
+	.title {
+		
+		color:#FFA54B;
+	}
+	hr{
+	margin: 0;
+	border-color: #FFA54B;
+	clear: both;
+	padding-bottom: 2em;
+	
+	}
+	.quiz-res-button-primary{
+		background-color:#90C5A9;
+		border:#24677F;
+		border-bottom: 2px solid #FF434A;
+		color:#42094A;
+
+		
+		}
+	.quiz-res-button-primary:hover{
+		background:#FF434A;
+		}
+
 	.question {
-		font-size: 1.2em;
+		font-size: 2em;
 	}
 
 	.container {
 		margin: 2em;
-		font-family: $fontQuestrial;
+		
 	}
+
 
 	.question-container {
 		margin: 2em;
-		font-family: $fontQuestrial;
+		color:#42094A;
 	}
-
+		
 	.percentage {
 		margin: 2em;
-		font-family: $fontQuestrial;
+		font-size:2em;
+		color:#FF434A;
+		
+	}
+	.number-correct{
+		font-size:1.5em;
+		color:#FFA54B;
+
 	}
 
 	.green {
 		color: green;
 		font-weight: bold;
-		font-family: $fontQuestrial;
+		
 	}
 
 	.red {
 		color: red;
 		font-weight: bold;
-		font-family: $fontQuestrial;
+		
 	}
 }

@@ -110,18 +110,19 @@ module.exports = React.createClass({
 			return (
 				<div className="quiz-results-container">
 					<div className="container">
-						<h5>Your Results</h5>
+						<h2 className="results-heading"><strong>Check Out Your Results!</strong></h2>
+						<hr />
 						{ListQuizName}
 					</div>
-					<hr />
+					
 					<div>
 						{ListQuestionDetails}
 					</div>
 					<div>
-						<div>Number Correct: {this.state.numberOfCorrectAnswers} out of {this.state.questions.length}</div> 
+						<div className="number-correct">Number Correct: {this.state.numberOfCorrectAnswers} out of {this.state.questions.length}</div> 
 						<div className="percentage">Percentage: {this.state.percentage}%</div>
 					</div>
-					<button className="button" onClick={this.onReturnQuizList}>Return to Quiz List</button>
+					<button className="quiz-res-button-primary" onClick={this.onReturnQuizList}>Return to Quiz List</button>
 				</div>
 			);
 	},
