@@ -85,7 +85,7 @@ module.exports = React.createClass({
 									<td><a href="https://github.com/MichaelDillie"><img src="../../images/GitHub-Mark-32px.png" /></a></td>
 								</tr>
 								<tr>
-									<td>Noel Ferris</td>
+									<td>Noel Farris</td>
 									<td><a href="https://github.com/noelfarris"><img src="../../images/GitHub-Mark-32px.png" /></a></td>
 								</tr>
 								<tr>
