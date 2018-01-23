@@ -1,5 +1,5 @@
 {
-  "name": "new-project",
+  "name": "iron-quizzes",
   "description": "",
   "version": "1.0.0",
   "main": "index.html",
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "backbone": "^1.2.3",
-    "jquery": "^2.1.4",
+    "jquery": "^3.0.0",
     "marked": "^0.3.5",
     "moment": "^2.10.6",
     "react": "^0.14.0",
